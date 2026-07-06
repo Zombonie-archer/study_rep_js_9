@@ -16,3 +16,66 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.gallery-body .gallery {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 24px 156px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-body .gallery .gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery-body .gallery .gallery-item img {
+  display: block;
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.form-body .feedback-form {
+  width: 360px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-body .feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-body .feedback-form label input,
+.form-body .feedback-form label textarea {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form-body .feedback-form label textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.form-body .feedback-form button {
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #747bff;
+  border-radius: 8px;
+  border: none;
+  width: 90px;
+}
